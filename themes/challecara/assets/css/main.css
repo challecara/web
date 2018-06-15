@@ -1,0 +1,581 @@
+@charset "utf-8";
+/*-----------------------------------------------------------------------
+  ●   2015 NEOZEST (http://neozest.jp/)
+  ●   main(common) layout menu
+
+  <!-- ▼ start -->
+    common lyout objects
+  <!-- ▲ end -->
+
+  001. ページ全体
+  002. 全体配置
+  003. ヘッダー詳細
+  004. ナビ詳細
+  005. パンくずリスト詳細
+  006. メイン詳細
+  007. ページトップボタン詳細
+  008. フッター詳細
+  999. その他
+-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------
+  001. ページ全体
+-----------------------------------------------------------------------*/
+html {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #ddd url("../../images/bac_body.png") repeat;
+  color: #333;
+  line-height: 170%;
+  min-width: 960px;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Hiragino Kaku Gothic Pro", "Meiryo", "MS PGothic", "MS UI Gothic", Osaka, sans-serif;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 0.933em;
+}
+a,
+a:link,
+a:visited {
+  color: #319fbc;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  color: #db4b37;
+  filter:alpha(opacity=8);
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  outline: 0;
+  text-decoration: underline;
+}
+/*-----------------------------------------------------------------------
+  002. 全体配置
+-----------------------------------------------------------------------*/
+header {
+  background: #fff;
+  margin: 0 0 20px 0;
+  overflow: hidden;
+  padding: 10px 0;
+  width: 100%;
+}
+nav {
+  clear: both;
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition-property: all;
+  -webkit-transition: 0.25s linear;
+  -moz-transition-property: all;
+  -moz-transition: 0.25s linear;
+  -ms-transition-property: all;
+  -ms-transition: 0.25s linear;
+  -o-transition-property: all;
+  -o-transition: 0.25s linear;
+  transition-property: all;
+  transition: 0.25s linear;
+  width: 100%;
+}
+.bread_nav {
+  clear: both;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.main {
+  background: #fff;
+  clear: both;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 0;
+  width: 960px;
+}
+#pagetop {
+  bottom: 80px;
+  height: 36px;
+  overflow: hidden;
+  position: fixed;
+  -webkit-transform: translate3d(0,0,0);
+  width: 100%;
+  z-index: 999;
+}
+footer {
+  background: #fff;
+  clear: both;
+  margin: 100px 0 0 0;
+  width: 100%;
+}
+/*-----------------------------------------------------------------------
+  003. ヘッダー詳細
+-----------------------------------------------------------------------*/
+header section {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 960px;
+}
+header h1 {
+  float: left;
+  overflow: hidden;
+  width: 320px;
+}
+header h1 a {
+  background: url("../../images/bac_header_h1.png") no-repeat 10px center;
+  background-size: 32px 32px;
+  color: #db4b37;
+  display: block;
+  font-size: 0.5em;
+  font-weight: normal;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 0 0 10px;
+  overflow: hidden;
+  padding: 0 0 0 48px;
+}
+header aside {
+  height: 32px;
+  line-height: 32px;
+  float: right;
+  font-size: 0.8em;
+  margin: 0 20px 0 0;
+  overflow: hidden;
+  position: relative;
+  width: 620px;
+}
+header div:after {
+  content: "";
+  padding-right: 50px;
+  white-space: nowrap;
+}
+header div {
+  display: inline-block;
+  margin: 0;
+  padding-left: 620px;
+  white-space: nowrap;
+  -webkit-animation-name:marquee;
+  -webkit-animation-timing-function:linear;
+  -webkit-animation-duration:100s;
+  -webkit-animation-iteration-count:infinite;
+  -moz-animation-name:marquee;
+  -moz-animation-timing-function:linear;
+  -moz-animation-duration:100s;
+  -moz-animation-iteration-count:infinite;
+  -ms-animation-name:marquee;
+  -ms-animation-timing-function:linear;
+  -ms-animation-duration:100s;
+  -ms-animation-iteration-count:infinite;
+  -o-animation-name:marquee;
+  -o-animation-timing-function:linear;
+  -o-animation-duration:100s;
+  -o-animation-iteration-count:infinite;
+  animation-name:marquee;
+  animation-timing-function:linear;
+  animation-duration:100s;
+  animation-iteration-count:infinite;
+}
+@-webkit-keyframes marquee {
+  from   { -webkit-transform: translate(0%);}
+  99%,to { -webkit-transform: translate(-100%);}
+}
+@-moz-keyframes marquee {
+  from   { -moz-transform: translate(0%);}
+  99%,to { -moz-transform: translate(-100%);}
+}
+@-ms-keyframes marquee {
+  from   { -ms-transform: translate(0%);}
+  99%,to { -ms-transform: translate(-100%);}
+}
+@-o-keyframes marquee {
+  from   { -o-transform: translate(0%);}
+  99%,to { -o-transform: translate(-100%);}
+}
+@keyframes marquee {
+  from   { transform: translate(0%);}
+  99%,to { transform: translate(-100%);}
+}
+header a,
+header a:link,
+header a:visited {
+  color: #db4b37;
+  text-decoration: none;
+}
+/*-----------------------------------------------------------------------
+  004. ナビ詳細
+-----------------------------------------------------------------------*/
+nav ul {
+  background: #fff;
+  list-style: none;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px;
+  -webkit-transition-property: all;
+  -webkit-transition: 0.25s linear;
+  -moz-transition-property: all;
+  -moz-transition: 0.25s linear;
+  -ms-transition-property: all;
+  -ms-transition: 0.25s linear;
+  -o-transition-property: all;
+  -o-transition: 0.25s linear;
+  transition-property: all;
+  transition: 0.25s linear;
+  width: 940px;
+}
+.pt20 {
+  padding: 20px 10px 10px 10px;
+}
+nav li {
+  background: #e3e3e3;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #f2f2f2), color-stop(0.50, #fff));
+  background: -webkit-linear-gradient(top, #fff 50%, #f2f2f2 100%);
+  background: -moz-linear-gradient(top, #fff 50%, #f2f2f2 100%);
+  background: -o-linear-gradient(top, #fff 50%, #f2f2f2 100%);
+  background: -ms-linear-gradient(top, #fff 50%, #f2f2f2 100%);
+  background: linear-gradient(to bottom, #fff 50%, #f2f2f2 100%);
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  float: left;
+  font-size: 0.75em;
+  height: 32px;
+  letter-spacing: 0;
+  line-height: 32px;
+  overflow: hidden;
+  padding: 4px 8px;
+}
+nav li:first-child {
+  border-left: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+}
+nav li:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #f5f5f5), color-stop(0.50, #fff));
+  background: -webkit-linear-gradient(top, #fff 50%, #f5f5f5 100%);
+  background: -moz-linear-gradient(top, #fff 50%, #f5f5f5 100%);
+  background: -o-linear-gradient(top, #fff 50%, #f5f5f5 100%);
+  background: -ms-linear-gradient(top, #fff 50%, #f5f5f5 100%);
+  background: linear-gradient(to bottom, #fff 50%, #f5f5f5 100%);
+}
+#menu-item-526 {
+  display: none;
+}
+#menu-item-526 a {
+  background: url("../../images/bac_header_h1.png") no-repeat left center;
+  background-size: 32px 32px;
+  display: block;
+  height: 32px;
+  padding: 0 0 0 36px;
+}
+#menu-item-22 {
+  border-left: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+}
+#menu-item-22 a {
+  background: url("../../images/bac_nav_about.png") no-repeat left center;
+  background-size: 32px 32px;
+  display: block;
+  height: 32px;
+  padding: 0 0 0 36px;
+}
+.show {
+  display: block !important;
+}
+.square {
+  border-left: none !important;
+  border-radius: 0 !important;
+}
+#menu-item-23 {
+  border-left: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+}
+#menu-item-23.fixed {
+  border-left: none;
+  border-radius: 0;
+}
+#menu-item-23 a {
+  background: url("../../images/bac_nav_schedule.png") no-repeat left center;
+  background-size: 32px 32px;
+  display: block;
+  height: 32px;
+  padding: 0 0 0 36px;
+}
+#menu-item-26 a {
+  background: url("../../images/bac_nav_news.png") no-repeat left center;
+  background-size: 32px 32px;
+  display: block;
+  height: 32px;
+  padding: 0 0 0 36px;
+}
+#menu-item-545 a {
+  background: url("../../images/bac_nav_history.png") no-repeat left center;
+  background-size: 32px 32px;
+  display: block;
+  height: 32px;
+  padding: 0 0 0 36px;
+}
+#menu-item-24 {
+  border-radius: 0 4px 4px 0;
+}
+#menu-item-24 a {
+  background: url("../../images/bac_nav_contact.png") no-repeat left center;
+  background-size: 32px 32px;
+  display: block;
+  height: 32px;
+  padding: 0 0 0 36px;
+}
+#menu-item-28 {
+  background: none;
+  border: none;
+  float: right;
+  padding: 4px 0;
+}
+#menu-item-28 a {
+  background: url("../../images/bac_header_fb.jpg") no-repeat;
+  background-size: 32px 32px;
+  border-radius: 4px;
+  display: block;
+  float: left;
+  height: 32px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 32px;
+}
+#menu-item-29 {
+  background: none;
+  border: none;
+  float: right;
+  padding: 4px 8px 4px 0;
+}
+#menu-item-29 a {
+  background: url("../../images/bac_header_tw.jpg") no-repeat;
+  background-size: 32px 32px;
+  border-radius: 4px;
+  display: block;
+  float: left;
+  height: 32px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 32px;
+}
+.nav_fixed {
+  background: #fff;
+  left: 0;
+  position: fixed;
+  top: 0;
+  -webkit-transform: translate3d(0,0,0);
+  z-index: 999;
+}
+nav a:hover,
+nav a:active {
+  text-decoration: none;
+}
+/*-----------------------------------------------------------------------
+  005. パンくずリスト詳細
+-----------------------------------------------------------------------*/
+.bread_nav ul {
+  background: #fff;
+  list-style: none;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 960px;
+}
+.bread_nav li {
+  background: url("../../images/bac_bread_nav.png") no-repeat left 7px;
+  float: left;
+  font-size: 0.75em;
+  margin: 0 0 0 4px;
+  padding: 0 0 0 16px;
+}
+.bread_nav li:first-child {
+  background: none;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+/*-----------------------------------------------------------------------
+  006. メイン詳細
+-----------------------------------------------------------------------*/
+/* コンテンツ */
+.main article {
+  float: left;
+  overflow: hidden;
+  padding: 20px;
+  width: 920px;
+}
+/* サイドバー 共通 */
+.side {
+  float: right;
+  overflow: hidden;
+  padding: 20px;
+  width: 280px;
+}
+.side h2,
+.side h3 {
+  border-bottom: 1px solid #ffcfca;
+  border-left: 10px solid #ffcfca;
+  color: #fc7770;
+  font-size: 1.125em;
+  margin: 0 0 10px 0;
+  padding: 5px 10px;
+}
+.side h4 {
+  color: #fc7770;
+  font-size: 0.938em;
+}
+.side ul {
+  list-style: none;
+}
+.side li {
+  font-size: 0.938em;
+  padding: 0 0 0 0.25em;
+}
+/* サイドバー スポンサー */
+.side_sponsor h2 {
+  margin: 30px 0 0 0;
+}
+.side_sponsor h3 {
+  margin: 10px 0;
+}
+.side_company {
+  margin: 30px 0 0 0;
+}
+.side_company h3 {
+  margin: 0 0 20px 0;
+}
+.side_company h4 {
+  line-height: 100%;
+  margin: 10px 0;
+}
+.side_company h4:nth-of-type(1) {
+  border-left: 10px solid #d9d98c;
+  padding: 0 0 0 10px;
+}
+.side_company h4:nth-of-type(2) {
+  border-left: 10px solid #ffd700;
+  padding: 0 0 0 10px;
+}
+.side_company h4:nth-of-type(3) {
+  border-left: 10px solid #c0c0c0;
+  padding: 0 0 0 10px;
+}
+.side_company li span {
+  font-size: 0.938em;
+}
+.side_contributor {
+  margin: 30px 0 0 0;
+}
+.side_university {
+  margin: 30px 0 0 0;
+}
+.side_university li:last-child {
+  font-size: 0.75em;
+  line-height: 150%;
+  padding: 5px 0 0 1.25em;
+}
+.side_university li:last-child:first-letter {
+  margin: 0 0 0 -1em;
+}
+/*-----------------------------------------------------------------------
+  007. ページトップボタン詳細
+-----------------------------------------------------------------------*/
+#pagetop dl {
+  height: 36px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 960px;
+}
+#pagetop dt {
+  background: url("../../images/bac_pagetop.png") no-repeat;
+  background-size: 32px 64px;
+  border: solid 2px #319fbc;
+  border-radius: 20px;
+  float: right;
+  height: 32px;
+  margin: 0 10px 0 0;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 32px;
+}
+#pagetop dt:hover {
+  background-position: 0 -32px;
+  border-color: #db4b37;
+}
+#pagetop a {
+  display: block;
+  height: 32px;
+  overflow: hidden;
+  width: 32px;
+}
+#pagetop dd {
+  display: none;
+}
+/*-----------------------------------------------------------------------
+  008. フッター詳細
+-----------------------------------------------------------------------*/
+footer section {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 960px;
+}
+footer section h2 {
+  float: left;
+  font-size: 0.75em;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px;
+  width: 640px;
+}
+footer section small {
+  display: block;
+  float: right;
+  font-size: 0.625em;
+  overflow: hidden;
+  padding: 10px;
+  text-align: right;
+  width: 280px;
+}
+footer br {
+  display: none;
+}
+/*-----------------------------------------------------------------------
+  999. その他
+-----------------------------------------------------------------------*/
+.noscript {
+  background: #fff;
+  color: #db4b37;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  width: 960px;
+}
+.nomodern {
+  text-align: center;
+  width: 100%;
+}
+.nomodern p{
+  background: #fff;
+  color: #db4b37;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  width: 960px;
+}
+.note {
+  font-size: 0.8em;
+  margin: 0 0 0 1em
+}
+.note:first-letter {
+  margin: 0 0 0 -1em;
+}
+.date {
+  font-size: 0.8em;
+}

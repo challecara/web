@@ -1,0 +1,24 @@
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: wordpress
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_PASSWORD: password
+    volumes:
+      - ./themes/challecara:/var/www/html/wp-content/themes/challecara
+
+  mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - 'mysql:/var/lib/mysql'
+
+volumes:
+  mysql:

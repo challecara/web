@@ -1,0 +1,735 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------
+  ●   2015 NEOZEST (http://neozest.jp/)
+  ●   page layout menu
+
+  001. トップページ
+  002. 九州アプリチャレンジキャラバンとは？
+  003. 開催概要
+  004. 投稿全般
+  005. お問い合わせ
+  998. サイトマップ
+  999. 404
+-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------
+  001. トップページ
+-----------------------------------------------------------------------*/
+/* タイトル */
+.top_title {
+  background: #fff url("../../images/bac_body.png") repeat;
+  height: 400px;
+  overflow: hidden;
+  width: 100%;
+}
+.top_title_wrap {
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  width: 960px;
+}
+.top_title_menu {
+  background: #fff;
+  float: left;
+  height: 400px;
+  text-align: center;
+  width: 320px;
+}
+.top_title_menu h2 {
+  padding: 15px 0 0 0;
+}
+.top_title_menu dt {
+  background: url("../../images/ima_title.png") no-repeat;
+  background-size: 240px 60px;
+  height: 60px;
+  margin: 10px auto 10px auto;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 240px;
+}
+.top_title_menu div {
+  background: url("../../images/ima_top_title_period.png") no-repeat;
+  background-size: 240px 20px;
+  height: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 240px;
+}
+.top_title_menu div:first-child {
+  background: url("../../images/ima_top_title_theme.png") no-repeat;
+  background-size: 240px 20px;
+  height: 20px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 240px;
+}
+.top_title_menu p {
+  padding: 20px 0 0 0;
+}
+.top_title_menu p a {
+  background: url("../../images/bac_top_title_menu_p.png") no-repeat;
+  background-size: 68px 32px;
+  border: 1px solid #db4b37;
+  font-size: 0.938em;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 5px 0 0 80px;
+  text-align: left;
+  width: 158px;
+}
+.top_title_menu p a:first-child {
+  border-bottom: none;
+}
+.top_title_menu p a,
+.top_title_menu p a:link,
+.top_title_menu p a:visited {
+  color: #db4b37;
+  text-decoration: none;
+}
+.top_title_menu p a:hover,
+.top_title_menu p a:active {
+  text-decoration: none;
+}
+/* スライダー */
+.top_title_slider {
+  background: #fff url("../../images/pic_top_title_slider_01.jpg") no-repeat right top;
+  background-size: 640px 400px;
+  float: right;
+  height: 400px;
+  overflow: hidden;
+  width: 640px;
+}
+.top_title_slider img {
+  height: 400px;
+  width: 640px;
+}
+/* コンテンツ */
+.top_news {
+  overflow: hidden;
+  position: relative;
+  width: 920px;
+}
+.top_news > h2 {
+  border-bottom: 1px solid #db4b37;
+  border-left: 10px solid #db4b37;
+  color: #db4b37;
+  font-size: 1.125em;
+  margin: 0 0 10px 0;
+  padding: 5px 10px;
+}
+.top_news > span {
+  display: block;
+  font-size: 0.875em;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.top_news ul {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  list-style: none;
+  overflow: hidden;
+  padding: 5px 10px 0 10px;
+}
+.top_news li {
+  border-top: 1px dotted #ddd;
+  overflow: hidden;
+}
+.top_news li:first-child {
+  border: none;
+}
+.top_news dl {
+  overflow: hidden;
+}
+.top_news dt {
+  color: #333;
+  float: left;
+  overflow: hidden;
+  padding: 5px 0 5px 10px;
+  width: 120px;
+}
+.top_news dd {
+  float: left;
+  font-size: 0.938em;
+  overflow: hidden;
+  padding: 5px 10px;
+  width: 742px;
+}
+.top_history {
+  margin: 40px 0 0 0;
+  overflow: hidden;
+  position: relative;
+  width: 920px;
+}
+.top_history > h2 {
+  border-bottom: 1px solid #db4b37;
+  border-left: 10px solid #db4b37;
+  color: #db4b37;
+  font-size: 1.125em;
+  margin: 0 0 10px 0;
+  padding: 5px 10px;
+}
+.top_history > span {
+  display: block;
+  font-size: 0.875em;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.top_history > ul {
+  list-style: none;
+}
+.top_history > ul > li {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 20px 0 0 0;
+  overflow: hidden;
+  padding: 10px;
+}
+.top_history > ul > li:first-child {
+  margin: 0;
+}
+.top_history dt {
+  float: left;
+  overflow: hidden;
+  width: 160px;
+}
+.top_history dd {
+  float: left;
+  overflow: hidden;
+  padding: 0 0 0 10px;
+  width: 720px;
+}
+.top_history h3 {
+  border-bottom: 1px dotted #ddd;
+  font-size: 1.125em;
+  padding: 0 5px;
+}
+.top_history h3 + span {
+  color: #333;
+  display: block;
+  padding: 0 5px;
+}
+.top_history img {
+  max-width: 160px;
+}
+.top_history div {
+  color: #333;
+  font-size: 0.938em;
+  padding: 0 5px;
+}
+/*-----------------------------------------------------------------------
+  002. 九州アプリチャレンジキャラバンとは？
+-----------------------------------------------------------------------*/
+.about {
+  font-size: 0.938em;
+  overflow: hidden;
+  width: 920px;
+}
+.about h2 {
+  border-bottom: 1px solid #db4b37;
+  border-left: 10px solid #db4b37;
+  color: #db4b37;
+  font-size: 1.125em;
+  margin: 0 0 10px 0;
+  padding: 5px 10px;
+}
+.about_outline div {
+  padding: 0 10px;
+}
+.about_philosophy {
+  margin: 30px 0 0 0;
+}
+.about_philosophy ul {
+  list-style: none;
+  padding: 0 10px;
+}
+/*-----------------------------------------------------------------------
+  003. 開催概要
+-----------------------------------------------------------------------*/
+.guidelines {
+  font-size: 0.938em;
+  overflow: hidden;
+  width: 920px;
+}
+.guidelines h2 {
+  border-bottom: 1px solid #db4b37;
+  border-left: 10px solid #db4b37;
+  color: #db4b37;
+  font-size: 1.125em;
+  margin: 0 0 10px 0;
+  padding: 5px 10px;
+}
+.guidelines h3 {
+  border-bottom: 1px solid #db4b37;
+  border-left: 10px solid #db4b37;
+  color: #db4b37;
+  font-size: 1.125em;
+  margin: 20px 0 10px 0;
+  padding: 5px 10px;
+}
+.guidelines_outline h2 {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.guidelines_outline ul {
+  list-style: none;
+  padding: 0 10px;
+}
+.guidelines_outline dt {
+  color: #db4b37;
+  padding: 10px 0 0 0;
+}
+.guidelines_outline dd {
+  padding: 0 0 0 10px;
+}
+.guidelines_outline ol {
+  padding: 0 0 0 20px;
+}
+.guidelines_outline br {
+  display: none;
+}
+.guidelines_schedule {
+  padding: 20px 0 0 0;
+}
+.guidelines_schedule div {
+  padding: 0 10px;
+}
+.guidelines_schedule table {
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  margin: 0 0 0 10px;
+}
+.guidelines_schedule th {
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  padding: 5px 10px;
+}
+.guidelines_schedule td {
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  padding: 5px 10px;
+}
+.guidelines_schedule td br {
+  display: none;
+}
+.guidelines_calendar {
+  padding: 10px 0 0 0;
+}
+.guidelines_calendar table {
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  margin: 0 0 0 10px;
+}
+.guidelines_calendar th {
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  padding: 5px 10px;
+}
+.guidelines_calendar td {
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  padding: 5px 10px;
+}
+.guidelines_calendar td br {
+  display: none;
+}
+.guidelines_calendar div {
+  display: none;
+}
+.item1 {
+  width: 30px;
+}
+.item2 {
+  width: 120px;
+}
+.item3 {
+  width: 50px;
+}
+.item4 {
+  width: 160px;
+}
+.item99 {
+  font-size: 0.75em;
+}
+.guidelines_cooperation {
+  overflow: hidden;
+  padding: 30px 0 0 0;
+  width: 920px;
+}
+.guidelines_cooperation h2,
+.guidelines_cooperation h3 {
+  border-bottom: 1px solid #db4b37;
+  border-left: 10px solid #db4b37;
+  color: #db4b37;
+  font-size: 1.125em;
+  margin: 0 0 10px 0;
+  padding: 5px 10px;
+}
+.guidelines_cooperation h4 {
+  color: #db4b37;
+  font-size: 0.938em;
+}
+.guidelines_cooperation ul {
+  list-style: none;
+}
+.guidelines_cooperation li {
+  font-size: 0.938em;
+  padding: 0 0 0 0.25em;
+}
+.guidelines_cooperation br {
+  display: none;
+}
+.guidelines_sponsor h3 {
+  margin: 20px 0 0 0;
+}
+.guidelines_company {
+  margin: 20px 0 0 0;
+}
+.guidelines_company h3 {
+  margin: 0 0 20px 0;
+}
+.guidelines_company h4 {
+  line-height: 100%;
+  margin: 10px 0;
+}
+.guidelines_company h4:nth-of-type(1) {
+  border-left: 10px solid #d9d98c;
+  padding: 0 0 0 10px;
+}
+.guidelines_company h4:nth-of-type(2) {
+  border-left: 10px solid #ffd700;
+  padding: 0 0 0 10px;
+}
+.guidelines_company h4:nth-of-type(3) {
+  border-left: 10px solid #c0c0c0;
+  padding: 0 0 0 10px;
+}
+.guidelines_contributor {
+  margin: 20px 0 0 0;
+}
+.guidelines_university {
+  margin: 20px 0 0 0;
+}
+.guidelines_university li:last-child {
+  font-size: 0.75em;
+  line-height: 150%;
+  padding: 5px 0 0 1.25em;
+}
+.guidelines_university li:last-child:first-letter {
+  margin: 0 0 0 -1em;
+}
+/*-----------------------------------------------------------------------
+  004. 投稿全般
+-----------------------------------------------------------------------*/
+/* index.php */
+.entry_list {
+  font-size: 0.938em;
+  overflow: hidden;
+  width: 920px;
+}
+.entry_list_contents {
+  border-top: 1px dotted #ddd;
+  margin: 0 0 20px 0;
+  padding: 20px 5px 0 10px;
+  word-wrap: break-word;
+}
+.entry_list_contents:nth-of-type(1) {
+  border-top: none;
+  padding: 0 5px 0 10px;
+}
+.entry_list_contents dl {
+  padding: 0 10px;
+}
+.entry_list_contents dt {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 0 0 4px 0;
+}
+.entry_list_contents dd {
+  font-size: 0.8em;
+}
+.entry_list_contents div {
+  padding: 10px 10px 0 10px;
+}
+.entry_list_contents img {
+  height: auto;
+  max-width: 560px;
+}
+.entry_list_contents li {
+  margin: 0 0 0 1.5em;
+}
+.pagination {
+  background: none;
+  clear: both;
+  font-size: 11px;
+  line-height: 13px ;
+  margin: 20px;
+  padding: 20px 0;
+  position: relative;
+  vertical-align: middle;
+}
+.pagination span,
+.pagination a {
+  background: #319fbc;
+  color: #fff;
+  display: block;
+  float: left ;
+  margin: 2px 2px 2px 0;
+  padding: 6px 9px 5px 9px;
+  text-decoration: none;
+  width: auto;
+}
+.pagination a:hover{
+  color: #fff;
+  background: #70d1e8;
+}
+.pagination
+.current{
+  background: #70d1e8;
+  color: #fff;
+  padding:6px 9px 5px 9px;
+}
+/* single.php */
+.entry_article {
+  font-size: 0.938em;
+  overflow: hidden;
+  width: 920px;
+}
+.entry_article_contents {
+  border-top: 1px dotted #ddd;
+  margin: 0 0 20px 0;
+  padding: 20px 5px 0 10px;
+  word-wrap: break-word;
+}
+.entry_article_contents:nth-of-type(1) {
+  border-top: none;
+  padding: 0 5px 0 10px;
+}
+.entry_article_contents dl {
+  padding: 0 10px;
+}
+.entry_article_contents dt {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 0 0 4px 0;
+}
+.entry_article_contents dd {
+  font-size: 0.8em;
+}
+.entry_article_contents div {
+  padding: 10px 10px 0 10px;
+}
+.entry_article_contents img {
+  height: auto;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.entry_article_contents li {
+  margin: 0 0 0 1.5em;
+}
+.entry_article_link {
+  list-style: none;
+  padding: 10px 10px 0 20px;
+}
+.entry_article_link li {
+  clear: both;
+  padding: 5px 0;
+}
+.entry_article_link li:first-child {
+  border-bottom: 1px dotted #ddd;
+}
+.entry_article_link dl {
+  overflow: hidden;
+}
+.entry_article_link dt {
+  background: #319fbc url("../../images/bac_entry_article_link.png") no-repeat 70px 10px;
+  color: #fff;
+  font-size: 0.8em;
+  float: left;
+  overflow: hidden;
+  padding: 2px 16px 2px 8px;
+  text-align: center;
+  width: 60px;
+}
+.entry_article_link dd {
+  overflow: hidden;
+  padding: 2px 0 2px 8px;
+}
+/*-----------------------------------------------------------------------
+  005. お問い合わせ
+-----------------------------------------------------------------------*/
+.contact {
+  font-size: 0.938em;
+  float: left;
+  overflow: hidden;
+  padding: 20px;
+  width: 920px;
+}
+.contact h2 {
+  border-bottom: 1px solid #db4b37;
+  border-left: 10px solid #db4b37;
+  color: #db4b37;
+  font-size: 1.125em;
+  margin: 0 0 10px 0;
+  padding: 5px 10px;
+}
+.contact h3 {
+  border-bottom: 1px solid #db4b37;
+  border-left: 10px solid #db4b37;
+  color: #db4b37;
+  font-size: 1.125em;
+  margin: 30px 0 10px 0;
+  padding: 5px 10px;
+}
+.contact_detail dl {
+  padding: 0 10px;
+}
+.contact_detail div {
+  padding: 0 10px;
+}
+/* Contact Form 7 */
+.wpcf7 {
+  font-size: 0.938em;
+  float: left;
+  overflow: hidden;
+  padding: 20px;
+  width: 920px;
+}
+.wpcf7 p {
+  padding: 5px 10px;
+}
+.wpcf7 p:nth-of-type(4) input {
+  width: 560px;
+}
+.wpcf7 p:nth-of-type(5) textarea {
+  width: 560px;
+}
+.wpcf7 input {
+  letter-spacing: 2em;
+}
+.wpcf7-submit {
+  margin: 10px 0 0 0;
+  padding: 10px 1em 10px 3em;
+}
+/*-----------------------------------------------------------------------
+  998. サイトマップ
+-----------------------------------------------------------------------*/
+.sitemap {
+  font-size: 0.938em;
+  float: left;
+  overflow: hidden;
+  padding: 20px;
+  width: 920px;
+}
+.sitemap h2 {
+  border-bottom: 1px solid #db4b37;
+  border-left: 10px solid #db4b37;
+  color: #db4b37;
+  font-size: 1.125em;
+  margin: 0 0 10px 0;
+  padding: 5px 10px;
+}
+#sitemap_list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -o-box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -ms-box-direction: normal;
+  -o-box-direction: normal;
+  list-style: none;
+  padding: 0 10px;
+}
+#sitemap_list li {
+  background: url("../../images/bac_bread_nav.png") no-repeat left 12px;
+  border-top: 1px dotted #ddd;
+  padding: 5px 0 5px 20px;
+}
+#sitemap_list li:first-child {
+  border-top: none;
+}
+.home-item a:after {
+  content: " ホーム";
+}
+.sitemap li:nth-of-type(1) /* home */ {
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -ms-box-ordinal-group: 1;
+  -o-box-ordinal-group: 1;
+}
+.sitemap li:nth-of-type(2) /* news */ {
+  -webkit-box-ordinal-group: 4;
+  -moz-box-ordinal-group: 4;
+  -ms-box-ordinal-group: 4;
+  -o-box-ordinal-group: 4;
+}
+.sitemap li:nth-of-type(3) /* history */ {
+  -webkit-box-ordinal-group: 5;
+  -moz-box-ordinal-group: 5;
+  -ms-box-ordinal-group: 5;
+  -o-box-ordinal-group: 5;
+}
+.sitemap li:nth-of-type(4) /* about */ {
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
+  -ms-box-ordinal-group: 2;
+  -o-box-ordinal-group: 2;
+}
+.sitemap li:nth-of-type(5) /* schedule */ {
+  -webkit-box-ordinal-group: 3;
+  -moz-box-ordinal-group: 3;
+  -ms-box-ordinal-group: 3;
+  -o-box-ordinal-group: 3;
+}
+.sitemap li:nth-of-type(6) /* contact */ {
+  -webkit-box-ordinal-group: 6;
+  -moz-box-ordinal-group: 6;
+  -ms-box-ordinal-group: 6;
+  -o-box-ordinal-group: 6;
+}
+.sitemap li:nth-of-type(7) /* sitemap */ {
+  -webkit-box-ordinal-group: 7;
+  -moz-box-ordinal-group: 7;
+  -ms-box-ordinal-group: 7;
+  -o-box-ordinal-group: 7;
+}
+.sitemap_detail h2 + p {
+  display: none;
+}
+.sitemap_detail ul + br {
+  display: none;
+}
+/*-----------------------------------------------------------------------
+  999. 404
+-----------------------------------------------------------------------*/
+.error404 {
+  font-size: 0.938em;
+  float: left;
+  overflow: hidden;
+  padding: 20px;
+  width: 920px;
+}
+.error404 h2 {
+  border-bottom: 1px solid #db4b37;
+  border-left: 10px solid #db4b37;
+  color: #db4b37;
+  font-size: 1.125em;
+  margin: 0 0 10px 0;
+  padding: 5px 10px;
+}
+.error404 div {
+  padding: 0 10px 10px 10px;
+}

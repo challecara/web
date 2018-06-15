@@ -1,0 +1,467 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------
+  ●   2015 NEOZEST (http://neozest.jp/)
+  ●   responsive layout menu
+
+  000. main(common) layout
+  001. トップページ
+  002. 九州アプリチャレンジキャラバンとは？
+  003. 開催概要
+  004. 投稿全般
+  005. お問い合わせ
+  998. サイトマップ
+  999. 404
+-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------
+  000. main(common) layout
+-----------------------------------------------------------------------*/
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  @import url("fullscreenOverlay.css");
+/* 002. 全体配置 */
+  body {
+    min-width: 640px;
+  }
+  .main {
+    width: 640px;
+  }
+/* 003. ヘッダー詳細*/
+  header section {
+    width: 640px;
+  }
+  header aside {
+    width: 300px;
+  }
+  header div {
+    padding-left: 300px;
+    -webkit-animation-duration:120s;
+    -moz-animation-duration:120s;
+    -ms-animation-duration:120s;
+    -o-animation-duration:120s;
+    animation-duration:120s;
+  }
+/* 004. ナビ詳細 */
+  nav ul {
+    padding: 10px 20px 10px 20px;
+    width: 600px;
+  }
+  nav li {
+    border: none;
+    padding: 0;
+    width: 32px;
+  }
+  #menu-item-526,
+  #menu-item-22,
+  #menu-item-23,
+  #menu-item-26,
+  #menu-item-27,
+  #menu-item-24,
+  #menu-item-545 {
+    margin: 0 10px 0 0;
+  }
+  #menu-item-28 {
+    padding: 0;
+  }
+  #menu-item-29 {
+    padding: 0 10px 0 0;
+  }
+/* 005. パンくずリスト詳細 */
+  .bread_nav ul {
+    width: 640px;
+  }
+/* 006. メイン詳細 */
+  .main article {
+    float: none;
+    width: 600px;
+  }
+  .side {
+    float: none;
+    width: 600px;
+  }
+  .side_sponsor_main br {
+    display: none;
+  }
+  .side_university br {
+    display: none;
+  }
+/* 007. ページトップボタン詳細 */
+  #pagetop dl {
+    width: 640px;
+  }
+/* 008. フッター詳細 */
+  footer section {
+    width: 640px;
+  }
+  footer section h2 {
+    float: none;
+    text-align: center;
+  }
+  footer section small {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  footer br {
+    display: none;
+  }
+}
+@media screen and (max-width: 639px) {
+/* 002. 全体配置 */
+  body {
+    min-width: 320px;
+  }
+  .main {
+    width: 320px;
+  }
+  footer {
+    margin: 80px 0 0 0;
+  }
+  footer br {
+    display: inline;
+  }
+/* 003. ヘッダー詳細*/
+  header section {
+    width: 320px;
+  }
+  header aside {
+    width: 280px;
+  }
+  header div {
+    padding-left: 280px;
+    -webkit-animation-duration:120s;
+    -moz-animation-duration:120s;
+    -ms-animation-duration:120s;
+    -o-animation-duration:120s;
+    animation-duration:120s;
+  }
+/* 004. ナビ詳細 */
+  nav ul {
+    padding: 10px 20px 10px 20px;
+    width: 280px;
+  }
+  nav li {
+    border: none;
+    padding: 0;
+    width: 32px;
+  }
+  #menu-item-526,
+  #menu-item-22,
+  #menu-item-23,
+  #menu-item-26,
+  #menu-item-27,
+  #menu-item-24,
+  #menu-item-545 {
+    margin: 0 2px 0 0;
+  }
+  #menu-item-28 {
+    padding: 0;
+  }
+  #menu-item-29 {
+    padding: 0 2px 0 0;
+  }
+/* 005. パンくずリスト詳細 */
+  .bread_nav ul {
+    width: 320px;
+  }
+  .bread_nav li {
+    float: none;
+    margin: 0 auto;
+    width: 266px;
+  }
+  .bread_nav li:first-child {
+    background: url("../../images/bac_bread_nav.png") no-repeat left 7px;
+    margin: 0 auto;
+    padding: 0 0 0 16px;
+  }
+  .bread_nav li:last-child {
+    display: none;
+  }
+/* 006. メイン詳細 */
+  .main article {
+    float: none;
+    width: 280px;
+  }
+  .side {
+    float: none;
+    width: 280px;
+  }
+/* 007. ページトップボタン詳細 */
+  #pagetop dl {
+    width: 320px;
+  }
+/* 008. フッター詳細 */
+  footer section {
+    line-height: 120%;
+    width: 320px;
+  }
+  footer section h2 {
+    float: none;
+    padding: 10px 0 0 0;
+    text-align: center;
+    width: 320px;
+  }
+  footer section small {
+    float: none;
+    padding: 0 0 10px 0;
+    text-align: center;
+    width: 320px;
+  }
+}
+/*-----------------------------------------------------------------------
+  001. トップページ
+-----------------------------------------------------------------------*/
+@media screen and (min-width: 640px) and (max-width: 959px) {
+/* タイトル */
+  .top_title {
+    height: auto;
+  }
+  .top_title_wrap {
+    height: auto;
+    width: 640px;
+  }
+  .top_title_menu {
+    float: none;
+    height: 230px;
+    width: 640px;
+  }
+  .top_title_menu h2 {
+    float: right;
+    text-align: left;
+    width: 238px;
+  }
+  .top_title_menu dl {
+    float: left;
+    overflow: hidden;
+    text-align: right;
+    width: 398px;
+  }
+  .top_title_menu p {
+    float: right;
+    width: 398px;
+}
+/* スライダー */
+  .top_title_slider {
+    float: none;
+  }
+/* コンテンツ */
+  .top_news {
+    width: 600px;
+  }
+  .top_news dd {
+    width: 422px;
+  }
+  .top_history {
+    width: 600px;
+  }
+  .top_history dd {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 639px) {
+/* タイトル */
+  .top_title {
+    height: auto;
+  }
+  .top_title_wrap {
+    height: auto;
+    width: 320px;
+  }
+  .top_title_menu {
+    float: none;
+    padding: 0 0 10px 0;
+    width: 320px;
+  }
+/* スライダー */
+  .top_title_slider {
+    float: none;
+    height: 200px;
+    width: 320px;
+  }
+  .top_title_slider img {
+    height: 200px;
+    width: 320px;
+  }
+/* コンテンツ */
+  .top_news {
+    width: 280px;
+  }
+  .top_news dt {
+    float: none;
+    padding: 5px 10px 0 10px;
+  }
+  .top_news dd {
+    float: none;
+    padding: 0 10px 5px 10px;
+    width: 248px;
+  }
+  .top_history {
+    width: 280px;
+  }
+  .top_history dt {
+    float: none;
+    text-align: center;
+    width: 268px;
+  }
+  .top_history dd {
+    float: none;
+    width: 248px;
+  }
+  .top_news a:hover,
+  .top_news a:active,
+  .top_history a:hover,
+  .top_history a:active {
+    text-decoration: none;
+  }
+}
+/*-----------------------------------------------------------------------
+  002. 九州アプリチャレンジキャラバンとは？
+-----------------------------------------------------------------------*/
+@media screen and (max-width: 639px) {
+  .about {
+    width: 280px;
+  }
+  .about img {
+    height: auto;
+    max-width: 280px;
+  }
+}
+/*-----------------------------------------------------------------------
+  003. 開催概要
+-----------------------------------------------------------------------*/
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .guidelines_outline h2 {
+    overflow: hidden;
+    width: 600px;
+  }
+  .guidelines_cooperation {
+    display: none;
+  }
+}
+@media screen and (max-width: 639px) {
+  .guidelines {
+    width: 280px;
+  }
+  .guidelines img {
+    height: auto;
+    max-width: 280px;
+  }
+  .guidelines_outline br {
+    display: inline;
+  }
+  .guidelines_schedule {
+    font-size: 0.875em;
+  }
+  .guidelines_schedule table {
+    margin: 0 5px;
+  }
+  .guidelines_schedule th {
+    padding: 2px 8px;
+  }
+  .guidelines_schedule td {
+    padding: 2px 8px;
+  }
+  .guidelines_schedule td br {
+    display: inline;
+  }
+  .guidelines_calendar {
+    font-size: 0.875em;
+  }
+  .guidelines_calendar table {
+    margin: 0 5px;
+  }
+  .guidelines_calendar th {
+    padding: 2px 8px;
+  }
+  .guidelines_calendar td {
+    padding: 2px 8px;
+  }
+   .item99 span {
+    display: none;
+  }
+  .guidelines_calendar td br {
+    display: inline;
+  }
+  .guidelines_calendar div {
+    display: block;
+    font-size: 0.857em;
+    padding: 5px 0 0 10px;
+  }
+  .item99 {
+    display: none;
+  }
+  .guidelines_cooperation {
+    display: none;
+  }
+}
+/*-----------------------------------------------------------------------
+  004. 投稿全般
+-----------------------------------------------------------------------*/
+@media screen and (max-width: 639px) {
+/* index.php */
+  .entry_list {
+    width: 280px;
+  }
+  .entry_list_contents dl {
+    padding: 0;
+  }
+  .entry_list_contents div {
+  padding: 0 10px 0 0;
+  }
+  .entry_list_contents img {
+    height: auto;
+    max-width: 260px;
+  }
+/* single.php */
+  .entry_article {
+    width: 280px;
+  }
+  .entry_article_contents dl {
+    padding: 0;
+  }
+  .entry_article_contents div {
+  padding: 0 10px 0 0;
+  }
+  .entry_article_contents img {
+    height: auto;
+    max-width: 260px;
+  }
+}
+/*-----------------------------------------------------------------------
+  005. お問い合わせ
+-----------------------------------------------------------------------*/
+@media screen and (max-width: 639px) {
+  .contact {
+    width: 280px;
+  }
+  .contact_detail dt a {
+    display: block;
+  }
+  .contact_detail dd a {
+    display: block;
+  }
+  .wpcf7 {
+    width: 280px;
+  }
+  .wpcf7 p:nth-of-type(4) input {
+    width: 200px;
+  }
+  .wpcf7 p:nth-of-type(5) textarea {
+    width: 200px;
+  }
+}
+/*-----------------------------------------------------------------------
+  998. サイトマップ
+-----------------------------------------------------------------------*/
+@media screen and (max-width: 639px) {
+  .sitemap {
+    width: 280px;
+  }
+}
+/*-----------------------------------------------------------------------
+  999. 404
+-----------------------------------------------------------------------*/
+@media screen and (max-width: 639px) {
+  .error404 {
+    width: 280px;
+  }
+}
