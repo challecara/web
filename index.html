@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="NEO ZEST(http://neozest.jp)">
+<meta name="discription" content="「思い描いた夢を実現するため、リスクを取って一歩踏み出し、創意工夫して、壁を打ち破る人」こんな人がもっと増えたら、日本は絶対に楽しくなるし、強くなる。九州アプリチャレンジキャラバン（チャレキャラ）は、大きなポテンシャルを持ちながらも、チャレンジする機会の少ない「九州の学生」に新たなチャレンジの場を提供します。">
+<meta name="keywords" content="九州アプリチャレンジ・キャラバン">
+<meta name="robots" content="index,follow">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=960px, maximum-scale=1.0, user-scalable=yes">
+<meta property="og:title" content="九州アプリチャレンジ・キャラバン">
+<meta property="og:image" content="http://challecara.jp/wp-content/themes/challecara/images/ima_ogp.jpg">
+<meta property="og:url" content="//challecara.jp/">
+<meta property="og:site_name" content="九州アプリチャレンジ・キャラバン">
+<meta property="og:description" content="「思い描いた夢を実現するため、リスクを取って一歩踏み出し、創意工夫して、壁を打ち破る人」こんな人がもっと増えたら、日本は絶対に楽しくなるし、強くなる。九州アプリチャレンジキャラバン（チャレキャラ）は、大きなポテンシャルを持ちながらも、チャレンジする機会の少ない「九州の学生」に新たなチャレンジの場を提供します。">
+<title>九州アプリチャレンジ・キャラバン</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="assets_top/css/top.css">
+<link rel="stylesheet" href="assets_top/css/hover.css">
+<link rel="stylesheet" href="assets_top/css/mediaquery.css">
+<link rel="author" title="ivanov@NEOZEST" href="//neozest.jp/profile/">
+<link rel="index" title="九州アプリチャレンジ・キャラバン" href="http://challecara.jp/">
+<link rel="contents" href="http://challecara.jp/sitemap/">
+<link rel="shortcut icon" href="assets_top/images/favicon.ico">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+</head>
+<body>
+
+
+
+<!-- ▼ header -->
+<header id="header">
+  <div id="header_inner">
+    <h1>九州アプリチャレンジ・キャラバン</h1>
+    <nav>
+      <ul>
+        <li><a href="http://challecara.jp/">ホーム</a></li>
+        <!--li><a href="http://challecara.jp/guidelines">開催概要</a></li>
+        <li><a href="http://challecara.jp/news">ニュース</a></li-->
+        <li><a href="http://challecara.jp/history">ブログ</a></li>
+        <li><a href="http://challecara.jp/contact">お問合わせ</a></li>
+        <li><a href="https://www.facebook.com/kappcc/" target="_blank">facebook</a></li>
+        <li><a href="https://twitter.com/challecara" target="_blank">Twitter</a></li>
+      </ul>
+    </nav>
+    <a id="header_entry" href="https://docs.google.com/forms/d/e/1FAIpQLScVr8W-X-E5gI1eoV4W4owO01MP70ZStTQbs3N-PkwYfTelKA/viewform">参加エントリー</a>
+    <!--span>参加エントリー受付終了しました。</span-->
+  </div>
+</header>
+<!-- ▲ header -->
+
+
+
+<!-- ▼ footer -->
+<footer>
+  <small>&copy; 2014-2018 九州アプリチャレンジ・キャラバン</small>
+</footer>
+<!-- ▲ footer -->
+
+
+
+<!-- ▼ javascript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets_top/js/libs/jquery/jquery-1.11.1.min.js"><\/script>')</script>
+<script src="assets_top/js/jquery.backstretch.min.js"></script>
+<script>
+$(function(){
+  $("header").backstretch("assets_top/images/bac_header.jpg");
+});
+
+$(function(){
+  var box    = $("#header nav");
+  var boxTop = $("#fixed").offset().top;
+//  console.log(boxTop);
+  $(window).scroll(function () {
+    if($("#header_entry").length > 0){
+      if($(window).scrollTop() >= boxTop) {
+        box.prependTo("div.main").addClass("fixed");
+        $("#header_inner > a").appendTo(".fixed > ul")
+        $(".fixed > ul > a").wrap("<li></li>");
+        $("body").css("margin-top","50px");
+      } else {
+        $(".fixed > ul > li:last-child > a").appendTo("#header_inner");
+        $(".fixed > ul > li:last-child").remove();
+        box.insertAfter("#header h1").removeClass("fixed");
+        $("body").css("margin-top","0px");
+      }
+    } else {
+      if($(window).scrollTop() >= boxTop) {
+        box.prependTo("div.main").addClass("fixed");
+        $("body").css("margin-top","50px");
+      } else {
+        box.insertAfter("#header h1").removeClass("fixed");
+        $("body").css("margin-top","0px");
+      }
+    }
+  });
+});
+</script>
+<!-- ▲ javascript -->
+
+
+
+</body>
+</html>

@@ -11,6 +11,11 @@ services:
       WORDPRESS_DB_PASSWORD: password
     volumes:
       - ./themes/challecara:/var/www/html/wp-content/themes/challecara
+      - ./index.html:/var/www/html/index.html
+      - ./assets_top:/var/www/html/assets_top
+      - ./index_2017.html:/var/www/html/index_2017.html
+      - ./index_2016.html:/var/www/html/index_2016.html
+      - ./.htaccess:/var/www/html/.htaccess
 
   mysql:
     image: mysql:5.7
