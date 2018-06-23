@@ -731,6 +731,20 @@ footer small {
 .partners li {
   margin: 0 20px 20px 0;
 }
+
+.contact-us {
+  padding: 20px;
+  margin-bottom: 160px;
+}
+.contact-us h2 {
+  color: #db4b37;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
 .platinum_partners h4 {
   border-bottom: 1px solid #db4b37;
   color: #db4b37;
