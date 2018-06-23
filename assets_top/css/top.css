@@ -86,8 +86,8 @@ a:focus {
   norm-003. typography
 -----------------------------------------------------------------------*/
 b,
-strong { 
-  font-weight: normal; 
+strong {
+  font-weight: normal;
 }
 blockquote {
   margin: 1em 40px;
@@ -161,8 +161,8 @@ input {
   *overflow: visible;
 }
 button,
-input[type="button"], 
-input[type="reset"], 
+input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button;
@@ -789,20 +789,86 @@ footer small {
 .other_partners span{
   font-size: 0.85em;
 }
+
 /*-----------------------------------------------------------------------
-  page-003. 
+  partners-2018
+-----------------------------------------------------------------------*/
+
+.partners-2018 .sponsors .rows {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.partners-2018 .sponsors .rows ul {
+  display: flex;
+}
+
+.partners-2018 .sponsors li {
+  text-align: center;
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-2018 .sponsors li.wanted {
+  background-color: #f4f4f4;
+  color: #999;
+}
+
+.partners-2018 .sponsors li.blank {
+  background: none;
+}
+
+.partners-2018 .sponsors .platinum_partners li {
+  height: 150px;
+  font-size: 5rem;
+}
+
+.partners-2018 .sponsors .platinum_partners li img {
+  max-height: 150px;
+  width: auto;
+}
+
+.partners-2018 .sponsors .gold_partners li {
+  width: 40%;
+  height: 100px;
+  font-size: 2rem;
+}
+
+.partners-2018 .sponsors .gold_partners li img {
+  max-height: 100px;
+  width: auto;
+}
+
+
+.partners-2018 .sponsors .local_partners li {
+  width: 20%;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+.partners-2018 .sponsors .local_partners li img {
+  max-height: 50px;
+  width: auto;
+}
+
+/*-----------------------------------------------------------------------
+  page-003.
 -----------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------
-  page-004. 
+  page-004.
 -----------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------
-  page-005. 
+  page-005.
 -----------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------
-  page-006. 
+  page-006.
 -----------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------
