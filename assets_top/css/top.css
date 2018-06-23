@@ -603,8 +603,6 @@ footer small {
 }
 .about {
   border-bottom: 2px solid #db4b37;
-  border-top: 2px solid #000 /*#db4b37*/;
-  margin-top: 20px;
   padding: 20px;
 }
 .about h2 {
