@@ -35,6 +35,17 @@
     font-weight: bold;
     margin: 16px 0 4px;
   }
+  .s-about-what h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 16px 0 4px;
+    padding-top: 16px;
+  }
+  .s-about-who-there h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 16px 0 4px;
+  }
 
   .s-note {
     font-size: 12px;
@@ -43,10 +54,11 @@
   .s-note-to {
     font-size: 12px;
   }
+  
   .s-entry-in-about {
     margin-left: 160px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
   .s-entry-in-about a {
     color: white;
@@ -57,6 +69,20 @@
     padding: 24px;
     text-align: center;
     width: 600px;
+  }
+  
+  .s-about-what .left {
+    float: left;
+    margin-right: 32px;
+    width: 350px;
+  }
+  .s-about-who-there .left {
+    float: left;
+    width: 530px;
+  }
+  .s-about-who-there .right {
+    float: right;
+    width: 350px;
   }
   
   /* spacers */
@@ -74,6 +100,12 @@
   .mb-16 { margin-bottom: 16px !important; }
   .mb-24 { margin-bottom: 24px !important; }
   .mb-32 { margin-bottom: 32px !important; }
+  
+  .s-clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 </style>
 </head>
 <body>
@@ -95,7 +127,7 @@
         <li><a href="https://twitter.com/challecara" target="_blank">Twitter</a></li>
       </ul>
     </nav>
-    <a id="header_entry" href="https://docs.google.com/forms/d/e/1FAIpQLScVr8W-X-E5gI1eoV4W4owO01MP70ZStTQbs3N-PkwYfTelKA/viewform">参加エントリー</a>
+    <a id="header_entry" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScVr8W-X-E5gI1eoV4W4owO01MP70ZStTQbs3N-PkwYfTelKA/viewform">参加エントリー</a>
     <!--span>参加エントリー受付終了しました。</span-->
   </div>
 </header>
@@ -132,12 +164,56 @@
           九州の大学、高専、高校、専門学校に通っていて、アプリ開発やウェブサービス開発に興味のある人を対象としています。
           チームでも、お一人でも参加できます。
           <br />
-          何からはじめたら良いのかわからない人をサポートする体制を整えております！
+          何からはじめたら良いかわからない人をサポートする体制を整えております！
         </p>
       </div>
       
       <div class="s-entry-in-about">
-        <a id="header_entry" href="https://docs.google.com/forms/d/e/1FAIpQLScVr8W-X-E5gI1eoV4W4owO01MP70ZStTQbs3N-PkwYfTelKA/viewform">参加エントリー</a>
+        <a id="header_entry" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScVr8W-X-E5gI1eoV4W4owO01MP70ZStTQbs3N-PkwYfTelKA/viewform">参加エントリー</a>
+      </div>
+      
+      <div style="width: 920px; height: 8px;"></div>
+      
+      <div class="s-about-what s-clearfix mb-32">
+        <div class="left">
+          <!-- TODO 2018-06-23 17:23 写真の差し替え -->
+          <img src="assets_top/images/2018/about_02.png" title="イベントの様子" alt="イベント風景 2 - 九州アプリチャレンジ・キャラバンについて" width="350" height="250">
+        </div>
+        <div class="right">
+          <h3>何をするの？</h3>
+          <p>
+            １２月のコンテストで作品発表することを目標に、７月から順次開催される開発イベントに参加します。
+            イベントでは、どのようにアプリやウェブサービスを開発したらよいのかを、
+            メンター<span class="s-note">（*1）</span>がやさしく指導します。
+            <br />
+            開発イベント以外の時間にも個別に作業を進めてもらい、
+            その間はチャレキャラの Slack コミュニティなどを通してサポートします。
+          </p>
+          <p class="s-note-to">
+            *1 主に九州に拠点を置くソフトウェア開発企業からプロのエンジニアが参加しています。
+          </p>
+        </div>
+      </div>
+      
+      <div style="width: 920px; height: 16px;"></div>
+      
+      <div class="s-about-who-there s-clearfix mb-32">
+        <div class="left">
+          <h3>どんな人がいるの？</h3>
+          <p>
+            毎年、九州の各学校からアプリを作りたいという強い思いを持つ学生が集まってきます！
+            最初からチームで参加する人もいますし、１人で参加して、チャレキャラの中で仲間を見つける人もいます。
+            本格的なプログラミングははじめての人もいますし、企画力のみで参加する人もいます。
+          </p>
+
+          <p>
+            そんな皆さんをサポートするため、メンターは九州に拠点を置くソフトウェア開発企業からプロのエンジニアが参加しています。
+          </p>
+        </div>
+        <div class="right">
+          <!-- TODO 2018-06-23 17:23 写真の差し替え -->
+          <img src="assets_top/images/2018/about_03.png" title="イベントの様子" alt="イベント風景 3 - 九州アプリチャレンジ・キャラバンについて" width="350" height="250">
+        </div>
       </div>
 
     </section><!-- /about -->
