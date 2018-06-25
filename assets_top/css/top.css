@@ -617,6 +617,37 @@ footer small {
   line-height: 1.5;
   padding: 10px 0;
 }
+
+.news-feed {
+  border-bottom: 2px solid #db4b37;
+  padding: 20px;
+}
+.news-feed h2 {
+  color: #db4b37;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  padding: 10px 0;
+}
+.news-feed ul {
+  list-style-type: none;
+}
+.news-feed li {
+  padding: 16px 0;
+}
+.news-feed .container {
+  background-color: #ebf6f9;
+  padding: 16px 48px;
+}
+.news-feed .headline {
+  margin-left: 24px;
+}
+.news-feed .more {
+  padding: 8px 0;
+  text-align: center;
+}
+
 .outline {
   border-bottom: 2px solid #db4b37;
   padding: 20px;
