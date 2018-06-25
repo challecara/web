@@ -215,6 +215,15 @@
       </div>
 
     </section><!-- /about -->
+
+    <section class="news-feed">
+      <h2>ニュース</h2>
+      <div class="container mt-16 mb-32">
+        <ul class="inner"></ul>
+        <p class="more"><a href="http://challecara.jp/history">もっと読む</a></p>
+      </div>
+    </section>
+
     <!-- outline -->
     <section class="outline">
       <h2>スケジュール</h2>
@@ -398,6 +407,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets_top/js/libs/jquery/jquery-1.11.1.min.js"><\/script>')</script>
 <script src="assets_top/js/jquery.backstretch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/ja.js"></script>
 <script>
 $(function(){
   $("header").backstretch("assets_top/images/bac_header.jpg");
@@ -429,6 +440,24 @@ $(function(){
         $("body").css("margin-top","0px");
       }
     }
+  });
+
+  $.ajax("http://challecara.jp/wp-json/wp/v2/posts?per_page=6", {
+      dataType: "json"
+  }).done(function (data) {
+      for (var index in data) {
+          var item = data[index];
+
+          $(".news-feed .inner").append(
+              '<li><span class="date">' +
+              moment(item.date).format("YYYY年MM月DD日") +
+              '</span><span class="headline"><a href="' + item.link + '">' +
+              item.title.rendered +
+              '</a></span></li>'
+          );
+      }
+  }).fail(function () {
+
   });
 });
 </script>
